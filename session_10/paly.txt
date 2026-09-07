@@ -1,0 +1,12 @@
+<?php
+
+$file = fopen("my_playlist.txt", "w");
+
+fwrite($file, "Perfect - Ed Sheeran\n");
+fwrite($file, "Shape of You - Ed Sheeran\n");
+fwrite($file, "Believer - Imagine Dragons\n");
+
+fclose($file);
+
+echo "Playlist created successfully!";
+?>
