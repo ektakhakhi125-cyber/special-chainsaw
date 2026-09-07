@@ -1,0 +1,96 @@
+PHP Request Lifecycle
+
+1. I type http://localhost/myphpdemo/hello.php in my browser.
+
+2. The browser sends a request to the local server.
+
+3. The request goes to Apache, which is running through XAMPP.
+
+4. Apache finds the requested hello.php file inside the htdocs/myphpdemo folder.
+
+5. Apache sends the PHP file to the PHP interpreter for processing.
+
+6. PHP reads and executes the code:
+   echo "Hello, PHP World!";
+
+7. PHP generates the output as HTML/text.
+
+8. The server sends the generated output back to the browser.
+
+9. The browser receives the response and displays:
+   Hello, PHP World!
+
+
+Browser
+   ↓ Request
+Apache Server
+   ↓
+PHP Interpreter
+   ↓ Execute PHP
+PHP Output
+   ↓ Response
+Browser
+   ↓
+Hello, PHP World!
+
+
+Quick Revivion
+
+$name = "Priyal";      // String
+$age = 20;             // Integer
+$height = 160.5;       // Float
+$isStudent = true;     // Boolean
+$apps = ["A", "B"];    // Array
+$value = null;         // Null
+
+var_dump($name);       // Shows type + value
+
+$num = "123.45";
+$a = (int)$num;        // 123
+$b = (float)$num;      // 123.45
+
+if       → Check first condition
+else     → Runs when condition is false
+elseif   → Checks another condition
+switch   → Checks multiple fixed options
+nested if → An if statement inside another condition
+
+
+| Loop        | Use                                     |
+| ----------- | --------------------------------------- |
+| `while`     | Repeat while a condition is true        |
+| `do-while`  | Run at least once, then check condition |
+| `for`       | Repeat a specific number of times       |
+| `foreach`   | Loop through arrays                     |
+| Nested loop | A loop inside another loop              |
+| `continue`  | Skip the current iteration              |
+| `break`     | Stop the loop completely                |
+
+
+
+
+// Define function
+function myFunction() {
+    echo "Hello";
+}
+
+// Call function
+myFunction();
+
+// Parameter
+function greet($name) {
+    echo "Hello " . $name;
+}
+
+// Default parameter
+function test($value = 10) {
+    echo $value;
+}
+
+// Return value
+function add($a, $b) {
+    return $a + $b;
+}
+
+// Global variable
+global $variable;

@@ -1,0 +1,11 @@
+XAMPP Modules Notes
+
+Apache:
+Apache is a web server. I need to start Apache when I want to run PHP files in my browser using localhost.
+
+MySQL:
+MySQL is a database server. I need to start MySQL when my PHP application needs to store, retrieve, update, or delete data from a database.
+
+For a simple PHP file like hello.php, only Apache is required.
+
+For a PHP project that uses a MySQL database, both Apache and MySQL need to be started.
